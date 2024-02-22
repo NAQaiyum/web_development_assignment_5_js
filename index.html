@@ -189,7 +189,7 @@
         <!-- creating bus seat portion left side -->
         <section class="lg:mx-auto lg:px-32 bg-gray-100 pt-16">
             <div class="mt-5 ml-7 flex gap-20 bg-white px-9 py-9">
-                <div class="select-seat-container-left  w-9/12">
+                <div class="select-seat-container-left  w-6/12">
                     <div class="seat-num-left">
                         <p class="text-2xl  font-semibold  mb-5">Select your seat</p>
                         <div class="abailable-and-selected   mb-10	  flex  gap-x-96	">
@@ -255,12 +255,12 @@
                 <img class="" src="images/info-devider.png" alt="">
 
 
-                <!-- calculation on right side -->
+                <!-- calculation on right side   justify-evenly -->
 
 
                 <div>
-                    <h2 class="text-2xl font-semibold mb-10 relative right-[20px]">Select Your Seat</h2>
-                    <div class="flex justify-evenly gap-16 relative right-[85px]">
+                    <h2 class="text-2xl font-semibold mb-10 ">Select Your Seat</h2>
+                    <div class="flex gap-20 ">
                         <div>
                             <h2 class="text-base font-medium">Seat<span id="select-total-seat" class="bg-green-400">8</span></h2>
                         </div>
@@ -271,14 +271,17 @@
                             <h2 class="text-base  font-medium ">Price</h2>
                         </div>
                     </div>
+                    <div id="append-child"></div>
+
+
                     <br>
-                    <hr class="relative right-[85px]" >
-                    <div class="flex justify-between relative right-[85px]">
+                    <hr class="relative right-[45px]" >
+                    <div class="flex justify-between relative right-[45px]">
                         <div>
                             <p>Total Price</p>
                         </div>
-                        <div  class="relative right-6">
-                            <p>TK <span>100</span></p>
+                        <div  class="relative right-10">
+                            <p>TK <span id="total-price">0</span></p>
                         </div>
                     </div>
                     <br>
@@ -298,12 +301,12 @@
                             <p>Grand Total</p>
                         </div>
                         <div class="relative right-6">
-                            <p>TK <span>1230</span></p>
+                            <p>TK <span>0</span></p>
                         </div>
                     </div>
     
                     <div class="relative right-[150px]">
-                        <button class="btn btn-wide  mt-20  bg-green-400  mb-10  ml-24 ">Next</button>
+                        <button class="btn btn-wide  mt-20  bg-green-400  mb-10  ml-24 "><a href="success.html">Next</a></button>
                     </div>
                 </div>
         </section>
@@ -313,7 +316,7 @@
     <footer>
 
     </footer>
-    <script src="function.js"></script>
+    <script src="./function.js"></script>
 </body>
 
 </html>
