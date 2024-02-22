@@ -109,7 +109,7 @@
         </section>
 
         <!-- java script main portion start -->
-        <section class="lg:mx-auto lg:px-32 pt-16 bg-gray-100 rounded-t-[25px] border-4 border-t-green-500">
+        <section class="lg:mx-auto lg:px-32 pt-16 bg-gray-100 rounded-t-[25px] border-t-4 border-t-green-500">
             <div class="container-fst">
                 <h2 class="  text-4xl font-bold  text-center">Nayeem Travel's</h2>
                 <p class="text-center mt-5 ">Traveling facilitates meeting new people and seeing different cultures, as
@@ -184,6 +184,128 @@
                 </div>
 
             </div>
+        </section>
+
+        <!-- creating bus seat portion left side -->
+        <section class="lg:mx-auto lg:px-32 bg-gray-100 pt-16">
+            <div class="mt-5 ml-7 flex gap-20 bg-white px-9 py-9">
+                <div class="select-seat-container-left  w-9/12">
+                    <div class="seat-num-left">
+                        <p class="text-2xl  font-semibold  mb-5">Select your seat</p>
+                        <div class="abailable-and-selected   mb-10	  flex  gap-x-96	">
+                            <p class="flex   "> <img src="images/seat-gray.png" alt="" width="20">Available </p>
+
+                            <p class=" flex  text-green-500 "><img src="images/seat-green-filled.png" alt="" width="20">
+                                Selected </p>
+                        </div>
+
+                        <div class="flex gap-10">
+                            <p class="pt-3 text-2xl">A</p>
+
+                            <div class="seat">
+                                <button class="btn btn-success bg-neutral-200 w-24 h-14 rounded-2xl border-none text-lg"
+                                    id="A1">A1</button>
+                            </div>
+
+                            <div class="seat">
+                                <button class="btn btn-success bg-neutral-200 w-24 h-14 rounded-2xl border-none text-lg"
+                                    id="A2">A2</button>
+                            </div>
+
+                            <div class="seat">
+                                <button class="btn btn-success bg-neutral-200 w-24 h-14 rounded-2xl border-none text-lg"
+                                    id="A3">A3</button>
+                            </div>
+
+                            <div class="seat">
+                                <button class="btn btn-success bg-neutral-200 w-24 h-14 rounded-2xl border-none text-lg"
+                                    id="A4">A4</button>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="flex gap-10">
+                            <p class="pt-3 text-2xl">B</p>
+
+                            <div class="seat">
+                                <button class="btn btn-success bg-neutral-200 w-24 h-14 rounded-2xl border-none text-lg"
+                                    id="B1">B1</button>
+                            </div>
+
+                            <div class="seat">
+                                <button class="btn btn-success bg-neutral-200 w-24 h-14 rounded-2xl border-none text-lg"
+                                    id="B2">B2</button>
+                            </div>
+
+                            <div class="seat">
+                                <button class="btn btn-success bg-neutral-200 w-24 h-14 rounded-2xl border-none text-lg"
+                                    id="B3">B3</button>
+                            </div>
+
+                            <div class="seat">
+                                <button class="btn btn-success bg-neutral-200 w-24 h-14 rounded-2xl border-none text-lg"
+                                    id="B4">B4</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <img class="" src="images/info-devider.png" alt="">
+
+
+                <!-- calculation on right side -->
+
+
+                <div>
+                    <h2 class="text-2xl font-semibold mb-10 relative right-[20px]">Select Your Seat</h2>
+                    <div class="flex justify-evenly gap-16 relative right-[85px]">
+                        <div>
+                            <h2 class="text-base font-medium">Seat<span id="select-total-seat" class="bg-green-400">8</span></h2>
+                        </div>
+                        <div>
+                            <h2 class="text-base font-medium">Class</h2>
+                        </div>
+                        <div>
+                            <h2 class="text-base  font-medium ">Price</h2>
+                        </div>
+                    </div>
+                    <br>
+                    <hr class="relative right-[85px]" >
+                    <div class="flex justify-between relative right-[85px]">
+                        <div>
+                            <p>Total Price</p>
+                        </div>
+                        <div  class="relative right-6">
+                            <p>TK <span>100</span></p>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="coupon-code flex  gap-5 relative right-20">
+                        <input id="coupon-code" type="text" placeholder="Coupon Code" class="border-2" />
+                        <button onclick="updateGrandTotal('click from apply')" id="apply-btn" class=" bg-green-400 w-24 h-30 rounded-md">
+                            Apply </button>
+                    </div>
+
+                    <br>
+                    <br>
+
+
+                    <div class="flex justify-between  relative right-[85px]">
+                        <div>
+                            <p>Grand Total</p>
+                        </div>
+                        <div class="relative right-6">
+                            <p>TK <span>1230</span></p>
+                        </div>
+                    </div>
+    
+                    <div class="relative right-[150px]">
+                        <button class="btn btn-wide  mt-20  bg-green-400  mb-10  ml-24 ">Next</button>
+                    </div>
+                </div>
         </section>
 
     </main>
