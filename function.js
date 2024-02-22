@@ -20,12 +20,15 @@ for (const seat of totalSeats) {
 
         // seat count forward
         const selectedSeat = getValue("select-total-seat");
-        document.getElementById("select-total-seat").innerText = selectedSeat + 1;
+        // document.getElementById("select-total-seat").innerText = selectedSeat +1 ;
+        if(selectedSeat <= 4){
+            document.getElementById("select-total-seat").innerText = selectedSeat +1 ;
+        }
 
         // not more than 4 seat selected
         const atleastSelectedSeat = getValue("select-total-seat");
-        if (atleastSelectedSeat + 1 > 4) {
-            alert("limit cross (you can select 4 seat per-person)");
+        if (atleastSelectedSeat > 4) {
+            alert("You can select only 4 seat");
             return;
         }
 
