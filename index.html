@@ -91,11 +91,11 @@
                 </div>
 
                 <div class="offer-right  flex  gap-10 bg-rose-300  w-1/2  h-40   rounded-3xl">
-                    <Div class=" pl-20  py-9">
+                    <div class=" pl-20  py-9">
                         <p class="off-1  text-lg font-medium"> <span id="offer-2">20% </span>OFF</p>
                         <p class="p-text text-base font-light"> on your next purchase</p>
                         <p class="text-base font-extralight"> use by January 2024</p>
-                    </Div>
+                    </div>
                     <img src="images/cupon-devider.png" alt="">
                     <div class="pl-20  py-12">
                         <p class=" text-xl font-medium">Couple 20</p>
@@ -262,7 +262,8 @@
                     <h2 class="text-2xl font-semibold mb-10 ">Select Your Seat</h2>
                     <div class="flex gap-20 ">
                         <div>
-                            <h2 class="text-base font-medium">Seat<span id="select-total-seat" class="bg-green-400">8</span></h2>
+                            <h2 class="text-base font-medium">Seat<span id="select-total-seat"
+                                    class="bg-green-400">0</span></h2>
                         </div>
                         <div>
                             <h2 class="text-base font-medium">Class</h2>
@@ -275,20 +276,21 @@
 
 
                     <br>
-                    <hr class="relative right-[45px]" >
+                    <hr class="relative right-[45px]">
                     <div class="flex justify-between relative right-[45px]">
                         <div>
                             <p>Total Price</p>
                         </div>
-                        <div  class="relative right-10">
+                        <div class="relative right-10">
                             <p>TK <span id="total-price">0</span></p>
                         </div>
                     </div>
                     <br>
                     <br>
-                    <div class="coupon-code flex  gap-5 relative right-20">
-                        <input id="coupon-code" type="text" placeholder="Coupon Code" class="border-2" />
-                        <button onclick="updateGrandTotal('click from apply')" id="apply-btn" class=" bg-green-400 w-24 h-30 rounded-md">
+                    <div class="coupon flex  gap-5 relative right-20">
+                        <input id="coupon" type="text" placeholder="Coupon Code" class="border-2" />
+                        <button onclick="updateTotal('click from apply')" id="apply-btn"
+                            class=" bg-green-400 w-24 h-30 rounded-md">
                             Apply </button>
                     </div>
 
@@ -301,12 +303,48 @@
                             <p>Grand Total</p>
                         </div>
                         <div class="relative right-6">
-                            <p>TK <span>0</span></p>
+                            <p>TK <span id="update-total">0</span></p>
                         </div>
                     </div>
-    
-                    <div class="relative right-[150px]">
-                        <button class="btn btn-wide  mt-20  bg-green-400  mb-10  ml-24 "><a href="success.html">Next</a></button>
+
+                    <!-- <div class="relative right-[150px]">
+                        <button class="btn btn-wide  mt-20  bg-green-400  mb-10  ml-24 "><a
+                                href="success.html">Next</a></button>
+                    </div> -->
+
+
+
+
+
+
+                    <div>
+                        <!-- <button class="btn btn-wide  mt-20  bg-green-400  mb-10  ml-24 ">Next</button> -->
+                        <!-- Open the modal using ID.showModal() method       <main class="relative left-[500px] top-[150px]">-->
+                        <button class="btn      bg-green-400  mt-20   mb-10  ml-16"
+                            onclick="my_modal_5.showModal()">Next</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box">
+                                <!-- <h3 class="font-bold text-lg"></h3> -->
+                                <p class="py-4">
+                                <div class="card w-96 bg-base-100 shadow-xl ml-12">
+                                    <div class="card-body">
+                                        <figure class="px-10 pt-10">
+                                            <img src="images/success.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                        <h2 class="card-title justify-center">Success</h2>
+                                        <p class="text-center ">Thank's for booking us.</p>
+
+                                        <div class="modal-action">
+                                            <form method="dialog">
+        
+                                                <button class="btn btn-success mr-28">Continue</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                </p>
+                            </div>
+                        </dialog>
                     </div>
                 </div>
         </section>
